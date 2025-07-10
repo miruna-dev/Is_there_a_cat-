@@ -1,0 +1,11 @@
+# Exclude training images and large data
+train_images/
+
+# Octave/Matlab specific cache or backup files
+*.mat
+*.asv
+*.octave_hist
+
+# Hidden system files
+.DS_Store
+Thumbs.db
