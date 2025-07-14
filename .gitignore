@@ -1,5 +1,6 @@
 # Exclude training images and large data
 train_images/
+debuging_functions
 
 # Octave/Matlab specific cache or backup files
 *.mat
