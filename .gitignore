@@ -2,6 +2,8 @@
 train_images/
 debuging_functions
 
+dataset.csv
+
 # Octave/Matlab specific cache or backup files
 *.mat
 *.asv
