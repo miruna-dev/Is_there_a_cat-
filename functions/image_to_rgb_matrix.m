@@ -8,6 +8,12 @@ function [R, G, B] = image_to_rgb_matrix(image_path)
   img = imresize(img, [64, 64]);
   % Resize the image to 64x64 pixels
 
+  if size(img, 3) == 1
+  % If the image is grayscale, convert it to RGB by duplicating the channel
+  % This ensures that we have three channels for R, G, and B
+    img = cat(3, img, img, img);
+  end
+
   R = img(:,:,1);
   G = img(:,:,2);
   B = img(:,:,3);
